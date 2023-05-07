@@ -1,0 +1,47 @@
+{
+  "name": "nodejs_behaviourdd",
+  "version": "1.0.0",
+  "description": "Node JS - Bahaviour Driven Development",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "behaviordd": "nodemon -e mjs,js,feature,json --exec npx cucumber-js",
+    "test": "c8 npx cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevezide/nodejs_behaviourdd.git"
+  },
+  "keywords": [
+    "behaviourdd",
+    "nodejs",
+    "api"
+  ],
+  "author": "Nevezide",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nevezide/nodejs_behaviourdd/issues"
+  },
+  "homepage": "https://github.com/nevezide/nodejs_behaviourdd#readme",
+  "engines": {
+    "node": "^16"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.2.0",
+    "luxon": "^3.3.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.11.1",
+    "c8": "^7.12.0",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "nodemon": "^2.0.22"
+  }
+}

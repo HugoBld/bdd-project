@@ -1,0 +1,5 @@
+.vscode
+.DS_STORE
+node_modules/
+coverage/tmp/*
+!coverage/tmp/.gitkeep
